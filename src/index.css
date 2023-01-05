@@ -80,6 +80,13 @@ header h1 {
 .formulario .campo {
   display: grid;
   margin-bottom: 2rem;
+  justify-content: center;
+}
+
+@media (min-width : 768px ) {
+  .formulario .campo {
+    justify-content: unset;
+  }
 }
 
 .formulario label {
@@ -241,7 +248,7 @@ main {
   gap: 2rem;
 }
 .filtros label {
-  font-size: 3rem;
+  font-size: 1.6rem;
   font-weight: 900;
   color: var(--gris-oscuro);
 }
@@ -353,8 +360,7 @@ main {
 }
 
 .modal .formulario {
-  max-width: 80rem;
-  width: 40rem;
+  max-width: 40rem;
   transition-property: all;
   transition-duration: 300ms;
   transition-timing-function: ease-in;
