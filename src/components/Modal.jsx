@@ -74,7 +74,7 @@ const Modal = (props) => {
             placeholder="Añade el nombre del gasto"
             value={nombre}
             onChange={({ target }) => setNombre(target.value)}
-            autoComplete="no-complete"
+            autoComplete="off"
           />
         </div>
         <div className="campo">
